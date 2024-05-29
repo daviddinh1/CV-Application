@@ -2,33 +2,48 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/header';
+import Resume from './components/resume';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [firstName, setFirstName] = useState('David Dinh');
+  const [email, setEmail] = useState('daviddinh158@gmail.com');
+  const [phoneNum, setPhoneNum] = useState('713-330-5506');
+  const [location, setLocation] = useState('Richmond, TX');
+  function changeFirstName(e){
+    setFirstName(e.target.value);
+  }
 
+  function changeEmail(e){
+    setEmail(e.target.value);
+  }
+
+  function changePhone(e){
+    setPhoneNum(e.target.value);
+  }
+
+  function changeLocation(e){
+    setLocation(e.target.value);
+  }
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="sep">
+      <Header
+        firstName={firstName}
+        setFirstName={changeFirstName}
+        email={email}
+        setEmail={changeEmail}
+        phoneNum= {phoneNum}
+        setPhoneNum={changePhone}
+        location={location}
+        setLocation={changeLocation}
+      />
+
+      
+      <Resume firstName={firstName} email={email} phoneNum={phoneNum} location={location}/>
+      
+
+
+    </div>
   )
 }
 

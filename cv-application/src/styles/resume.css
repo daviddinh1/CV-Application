@@ -1,0 +1,16 @@
+.header{
+ display: flex;
+ flex-direction: column;
+ background-color: darkcyan;
+ width: 600px;
+ height: auto;
+ font-size: 1.2em;
+ align-items: center;
+ justify-content: center;
+}
+
+.headerItems{
+ display: flex;
+ gap: 5px;
+ font-size: 1.1em;
+}
