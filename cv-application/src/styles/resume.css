@@ -9,6 +9,10 @@
  justify-content: center;
 }
 
+.resumeContainer{
+ display: flex;
+ flex-direction: column;
+}
 .headerItems{
  display: flex;
  gap: 5px;
