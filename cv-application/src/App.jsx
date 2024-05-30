@@ -74,7 +74,7 @@ function App() {
 
   const handleExp4Change = (event) => {//not allowint me to type
     const {name,value} = event.target;
-    setItem4((prevItems) => ({...prevItems,[name]:value}))
+    setItem4((Items) => ({...Items,[name]:value}))
   }
 
   function handleShowExp4(){
