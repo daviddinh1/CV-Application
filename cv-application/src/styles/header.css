@@ -1,7 +1,7 @@
 .container{
  display: flex;
  flex-direction: column;
- align-items: flex-start;
+ justify-content: space-between;
  width: 400px;
  height: auto;
  background-color: #3c3c3c;
@@ -25,4 +25,33 @@ input{
 }
 input:focus{
  border-color: #00BFFF;
+}
+
+.pdHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnOpen{
+  background-color: #1a1a1a;
+  border-radius: 50%;
+    /* Make the button round */
+  border: 1px solid transparent;
+  width: 2.5em;
+    /* Set width to make it round */
+  height: 2.5em;
+    /* Set height to make it round */
+  cursor: pointer;
+
+  transition: border-color 0.25s ease-out;
+}
+
+.btnOpen:hover {
+  border-color: #646cff;
+}
+
+.btnOpen:focus,
+.btnOpen:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }

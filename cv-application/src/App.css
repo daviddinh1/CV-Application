@@ -10,3 +10,8 @@
   gap: 20px;
 }
 
+.resumeChoices{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
