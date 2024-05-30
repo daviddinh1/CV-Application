@@ -5,7 +5,7 @@ function Experience({ item, handleInputChange, handleAddItem, setShowExp1,showEx
   return (
     <div className="xpContainer">
       <div className="pdHead">
-        <h2>Experience</h2>
+        <h2>Experience 1</h2>
         <button className="btnOpen" onClick={setShowExp1}>+</button>
       </div>
       <div className="inputContainer" style={{display: showExp1 ? 'block' : 'none'}}> 
